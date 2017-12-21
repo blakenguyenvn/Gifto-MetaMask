@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="29px" viewBox="0 0 30 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="Whipers---Home" transform="translate(-1140.000000, -5687.000000)">
+            <g id="footer" transform="translate(0.000000, 5401.000000)">
+                <g id="social" transform="translate(1140.000000, 286.000000)">
+                    <g id="Facebook">
+                        <path d="M0.5,14.5 C0.5,22.2317619 6.78083858,28.5 14.529148,28.5 C22.2774574,28.5 28.558296,22.2317619 28.558296,14.5 C28.558296,6.76823813 22.2774574,0.5 14.529148,0.5 C6.78083858,0.5 0.5,6.76823813 0.5,14.5 Z" id="back" stroke="#FFFFFF"></path>
+                        <path d="M15.5592374,22.5423505 L15.5592374,14.653585 L17.7412592,14.653585 L18.0304242,11.9350727 L15.5592374,11.9350727 L15.5629446,10.5744311 C15.5629446,9.86540123 15.6304474,9.48548683 16.6508662,9.48548683 L18.0149774,9.48548683 L18.0149774,6.76666667 L15.8326466,6.76666667 C13.2113164,6.76666667 12.2886762,8.08543761 12.2886762,10.3031956 L12.2886762,11.9353806 L10.6547085,11.9353806 L10.6547085,14.6538928 L12.2886762,14.6538928 L12.2886762,22.5423505 L15.5592374,22.5423505 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

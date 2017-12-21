@@ -1,0 +1,140 @@
+/*FORM */
+.header-slide {
+    min-height: 768px;
+}
+
+.header-slide:before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    background: #3D1740;
+    
+    background-image: -moz-linear-gradient( 147deg, rgb(76,11,209) 0%, rgb(52,5,111) 100%);
+    background-image: -webkit-linear-gradient( 147deg, rgb(76,11,209) 0%, rgb(52,5,111) 100%);
+    background-image: -ms-linear-gradient( 147deg, rgb(76,11,209) 0%, rgb(52,5,111) 100%);
+
+}
+
+.header-slide .container {
+    position: static;
+    height: 100%;
+}
+
+section.header .overlay .primary .inner-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+section.header .overlay .primary .inner-section .video-markup {
+    max-width: unset;
+    position: absolute;
+    width: 603px;
+    max-width: 100%;
+    height: auto;
+    right: 5px;
+    bottom: 30px;
+}
+
+section.header .overlay .primary .inner-section .play-btn-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    border-radius: 50%;
+}
+
+section.header .overlay .primary .inner-section .play-btn-wrapper .inner-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+section.header .overlay .primary .inner-section .play-btn-wrapper .small-waves {
+    position: absolute;
+    z-index: 1;
+}
+
+section.header .overlay .primary .inner-section .play-btn {
+    width: 100px;
+    height: 100px;
+    display: block;
+    background: url('../images/home-about/btn-play.png') no-repeat 0 0;
+    background-size: contain;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    transition: transform linear 0.2s;
+}
+
+section.header .overlay .primary .inner-section .play-btn:hover {
+    transform: scale(0.8);
+}
+
+/** Click To Top **/
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+
+    /* image replacement properties */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: url(../images/button_go_up.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .8;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.no-touch .cd-top:hover {
+    background-color: #e86256;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 992px) {
+    .cd-top {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cd-top {
+        height: 60px;
+        width: 60px;
+        right: 30px;
+        bottom: 30px;
+    }
+}
