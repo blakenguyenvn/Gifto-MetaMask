@@ -17,7 +17,7 @@
     background-image: -moz-linear-gradient( 147deg, rgb(76,11,209) 0%, rgb(52,5,111) 100%);
     background-image: -webkit-linear-gradient( 147deg, rgb(76,11,209) 0%, rgb(52,5,111) 100%);
     background-image: -ms-linear-gradient( 147deg, rgb(76,11,209) 0%, rgb(52,5,111) 100%); */
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/bg_2.jpg');
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
