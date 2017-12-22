@@ -56,26 +56,41 @@
 				message: null
 			};
 			
-			//== Get and validate Gas Limit
+			/**
+			 *	Get and validate Gas Limit
+			 */
 			if (formData.get('gifto_gas_limit') != null && typeof formData.get('gifto_gas_limit') == 'number') {
 				requestApi.gasLimit = formData.get('gifto_gas_limit');
 			}
 
-			//== Get and validate Recipient Address
+			/**
+			 *	Get and validate Recipient Address
+			 */
 			if (formData.get('gifto_recipient_wallet_address').length == 0) {
+				
 				this.showErrorMessage('Please enter Recipient Wallet address!');
+
 			} else if (formData.get('gifto_recipient_wallet_address').length < 42) {
+				
 				this.showErrorMessage('Please enter Right Recipient Wallet address!');
+
 			}
+			
+			//== Save Recipient Wallet
 			requestApi.to = formData.get('gifto_recipient_wallet_address');
 
-			//== Get and validate Amount
+			/**
+			 *	Get and validate Amount
+			 */
 			if (formData.get('gifto_amount') <= 0) {
 				this.showErrorMessage('Please enter amount of Gifto to send!');
 			}
+			//== Save Amount
 			requestApi.value = formData.get('gifto_amount');
 
-			//== Get and validate Message
+			/**
+			 *	Get and validate Message
+			 */
 			requestApi.message = formData.get('gifto_message');
 
 			if (this.validateWeb3() && requestApi.to != null && requestApi.value > 0) {
@@ -106,8 +121,6 @@
 					}
 		        });
 			}
-			
-			
 
 			return true;
 		}
